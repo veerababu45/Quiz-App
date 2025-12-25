@@ -1,0 +1,153 @@
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Category selector and start button */
+.controls {
+  margin-bottom: 20px;
+}
+
+.category-select {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.start {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: #2980b9;
+}
+
+/* Score / Timer / Progress */
+.info {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+}
+
+/* Question box */
+.question-container {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 700px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 80px;
+}
+
+/* Option buttons */
+.option-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #e0e0e0;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 80%;
+  max-width: 500px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d5d5d5;
+}
+
+/* Feedback */
+.correct {
+  background-color: #2ecc71 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #e74c3c !important;
+  color: white;
+}
+
+/* Navigation buttons */
+.dna-buttons {
+  margin-top: 20px;
+}
+
+.next, .quit {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next {
+  background-color: #27ae60;
+  color: white;
+}
+
+.next:hover {
+  background-color: #219150;
+}
+
+.quit {
+  background-color: #e67e22;
+  color: white;
+}
+
+.quit:hover {
+  background-color: #cf7119;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .button {
+    width: 95%;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

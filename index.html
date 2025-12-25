@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+
+  <h1>🧠 Quiz App</h1>
+
+  <!-- Category Selection + Start -->
+  <div class="controls">
+    <label for="category-select">Select Category:</label>
+    <select class="category-select">
+      <option value="9">General Knowledge</option>
+      <option value="18">Science: Computers</option>
+      <option value="23">History</option>
+      <option value="21">Sports</option>
+      <option value="27">Animals</option>
+    </select>
+    <button class="start">Start Quiz</button>
+  </div>
+
+  <!-- Score / Timer / Progress -->
+  <div class="info">
+    <span class="progress">Question 1 of 5</span>
+    <span class="score-display">Score: <span class="score">0</span></span>
+    <span class="timer">⏳ 10</span>
+  </div>
+
+  <!-- Question -->
+  <div class="question-container"></div>
+
+  <!-- Options -->
+  <div class="option-container"></div>
+
+  <!-- Next / Quit -->
+  <div class="dna-buttons">
+    <button class="quit">Quit</button>
+    <button class="next">Next</button>
+  </div>
+
+  <!-- Axios + Script -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
